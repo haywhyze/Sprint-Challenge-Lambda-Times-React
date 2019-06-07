@@ -8,7 +8,7 @@ const Tab = ({ tab, selectedTab, selectTabHandler }) => {
   return (
     <div
       className={tab === selectedTab ? 'tab active-tab' : 'tab'}
-      onClick={(tab) => {selectTabHandler(tab)}}
+      onClick={() => {selectTabHandler(tab)}}
     >
       {tab.toUpperCase()}
     </div>
