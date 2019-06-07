@@ -32,28 +32,27 @@ const HeaderStyled = styled.div`
     letter-spacing: 1px;
   }
 
-  .date {
-    margin-left: 25px;
-    flex: 1;
-  }
-
-  .temp {
-    text-align: right;
-    margin-right: 25px;
-    flex: 1;
-  }
-
   @media (min-width: 1280px) {
     width: 1280px;
   }
+`
+const Date = styled.span`
+  margin-left: 25px;
+  flex: 1;
+`
+
+const Temp = styled.span`
+  text-align: right;
+  margin-right: 25px;
+  flex: 1;
 `
 
 const Header = () => {
   return (
     <HeaderStyled>
-      <span className="date">SMARCH 32, 2018</span>
+      <Date>MARCH 31, 2018</Date>
       <h1>Lambda Times</h1>
-      <span className="temp">98°</span>
+      <Temp>98°</Temp>
     </HeaderStyled>
   )
 }
